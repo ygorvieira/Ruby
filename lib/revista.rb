@@ -1,7 +1,7 @@
 class Revista
-    attr_reader :titulo
+    include ActiveFile
 
-    def initialize(titulo)
-        @titulo = titulo
-    end
+
+    field :titulo
+    field :valor
 end
